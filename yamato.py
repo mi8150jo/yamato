@@ -14,7 +14,7 @@ def img_to_str(x, y, width, height):
 
 # chatgptに投げる
 def main(x, y, width, height):
-    openai.api_key = "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"
+    openai.api_key = ""
     string = img_to_str(x, y, width, height)
     gpt_model = "gpt-3.5-turbo"
     response = openai.ChatCompletion.create(
